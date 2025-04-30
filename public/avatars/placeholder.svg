@@ -1,0 +1,6 @@
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#e1e1e1"/>
+  <circle cx="100" cy="80" r="50" fill="#bbb"/>
+  <circle cx="100" cy="200" r="80" fill="#bbb"/>
+  <text x="50%" y="240" font-family="Arial" font-size="16" fill="#666" text-anchor="middle">Avatar Placeholder</text>
+</svg>

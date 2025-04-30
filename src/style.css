@@ -1,0 +1,113 @@
+/* Enhanced global styles for Tax Assistant app */
+
+/* Improved responsive behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  transition: all 0.3s ease;
+  overflow-x: hidden;
+}
+
+/* Responsive image improvements */
+img {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+img:hover {
+  filter: brightness(1.05);
+}
+
+/* Enhanced scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(41, 98, 255, 0.3);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(41, 98, 255, 0.5);
+}
+
+/* AI message glowing effect */
+.ai-message {
+  position: relative;
+  overflow: visible !important;
+}
+
+.ai-message::after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: transparent;
+  border-radius: inherit;
+  box-shadow: 0 0 15px rgba(0, 191, 165, 0.4), 0 0 30px rgba(41, 98, 255, 0.2);
+  opacity: 0;
+  z-index: -1;
+  animation: messagePulse 4s infinite;
+}
+
+@keyframes messagePulse {
+  0% { opacity: 0.2; }
+  50% { opacity: 0.6; }
+  100% { opacity: 0.2; }
+}
+
+/* Responsive typography improvements */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2.5rem !important;
+  }
+  
+  h2 {
+    font-size: 2rem !important;
+  }
+  
+  h3 {
+    font-size: 1.5rem !important;
+  }
+}
+
+/* Enhanced container padding on mobile */
+@media (max-width: 600px) {
+  .MuiContainer-root {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+}
+
+/* Hero section mobile enhancement */
+@media (max-width: 600px) {
+  .hero-section {
+    background-position: 60% center !important;
+    padding-top: 80px !important;
+    padding-bottom: 80px !important;
+  }
+}
+
+/* Animation for AI responses */
+.animate-ai-response {
+  animation: fadeIn 0.5s ease-out, glowEffect 4s infinite;
+}
+
+@keyframes glowEffect {
+  0% { box-shadow: 0 0 5px rgba(0, 191, 165, 0.2); }
+  50% { box-shadow: 0 0 20px rgba(0, 191, 165, 0.4), 0 0 30px rgba(41, 98, 255, 0.2); }
+  100% { box-shadow: 0 0 5px rgba(0, 191, 165, 0.2); }
+}
